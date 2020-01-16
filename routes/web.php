@@ -19,3 +19,7 @@ Route::get('contact', function () {
 	$name="hamza aid";
     return view('contact',['name'=>$name]);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
